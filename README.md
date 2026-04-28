@@ -84,3 +84,26 @@ Prebuilt publicly available modules for you to use like maybe vpc or eks cluster
 https://registry.terraform.io/browse/modules
 
 https://registry.terraform.io/modules/terraform-aws-modules/iam/aws/latest/submodules/iam-user
+
+**Random Provider** 
+
+
+https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/id
+
+```bash 
+
+resource "random_id" "server" {
+  byte_length = 8
+}
+
+
+output "id" {
+  value = random_id.server.dec
+}
+
+resource "aws_s3_bucket" "bucket1" {
+  bucket = "bucket-${random_id.server.dec}" 
+}
+
+```
+
