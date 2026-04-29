@@ -107,3 +107,69 @@ resource "aws_s3_bucket" "bucket1" {
 
 ```
 
+**Terraform functions** 
+
+https://developer.hashicorp.com/terraform/language/functions
+
+**Terraform resources documentation** 
+
+For any resource you want to create just go to that provider in terraform registry 
+(Browser providers) -> select providers -> documentation -> search for what you want to create (say ec2 or iam_user) -> copy the resource code done 
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_access_key
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user
+
+**Terraform lifecycle**
+
+- `ignore_changes` 
+
+- `create_before_destroy` 
+
+- `prevent_destroy` 
+
+- `replace_triggered_by` 
+
+
+**Terraform validation For resources** 
+
+- `precondition `
+
+- `postcondition`
+
+**Terraform state modification** 
+
+- `terraform state list` - lists all resources managed by terraform 
+
+- `terraform state mv oldname newname` - to rename a resource type in existing state file so that terraform wont create a new resource 
+
+- `terraform state show resource_name` - To show the complete details of a resource 
+created 
+
+- `terraform state rm resource_name` - To remove a resource from being tracked by terraform then remove the resource code from the terraform files as well 
+
+- `terraform state pull` - To pull the current state from remote backend 
+
+- `terraform state push statefile` - To push local state file to remote backend 
+
+**Terraform import** 
+
+- `terraform import <resourcetype.name> actual_Id_From_Cloud` 
+
+
+**Terraform workspace** 
+
+- `terraform workspace list` - To List all workspaces 
+
+- `Creating a workspace` - Creating a workspace 
+
+- `terraform workspace select <workspaceName>`  - Selecting a workspace 
+
+- `terraform workspace show` - Showing the current workspace 
+
+- `terraform workspace select default
+   terraform workspace delete <workspacename>` - Deleting a workspace
+
+  **Terraform Cloud** 
+
+  
