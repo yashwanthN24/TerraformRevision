@@ -106,3 +106,5 @@ resource "aws_instance" "server" {
 }
 
 # https://www.perplexity.ai/search/d1723b13-37d3-4cdc-8854-301c59123313
+
+# https://www.perplexity.ai/search/d1723b13-37d3-4cdc-8854-301c59123313
