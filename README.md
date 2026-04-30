@@ -172,4 +172,8 @@ created
 
   **Terraform Cloud** 
 
+  https://developer.hashicorp.com/terraform/cli/commands/refresh
+
+  https://developer.hashicorp.com/terraform/language/block/import
+
   
